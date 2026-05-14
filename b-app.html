@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kira Clinic Online – Book Appointment</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body class="page-book">
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo-box">
+        <img src="./img/logo.png" alt="Kira clinic Logo" />
+      </div>
+
+      <div class="header-right">
+        <h1 class="site-title">KIRA CLINIC ONLINE</h1>
+        <nav class="nav">
+          <a href="index.html" class="nav-link">HOME</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="book-appointment.html" class="nav-link nav-pill-outline active-pill">
+            Book<br />Appointment
+          </a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- BOOK APPOINTMENT SECTION -->
+  <section class="section-booking">
+    <h2 class="section-heading fade-in-up">Book an Appointment</h2>
+
+    <div class="booking-card fade-in-up delay-1">
+      <p class="booking-intro">
+        Fill in the form below to <em>request an appointment</em> at Kira Clinic.
+        We'll confirm your booking shortly.
+      </p>
+
+      <form class="booking-form" id="bookingForm">
+        <!-- Full Name -->
+        <div class="form-group">
+          <label for="fullname">Full Name <span class="required-star">*</span></label>
+          <input type="text" id="fullname" class="form-input" placeholder="e.g. Jean Baptiste Mugabo" required />
+        </div>
+
+        <!-- Date of Birth -->
+        <div class="form-group">
+          <label for="dob">Date of Birth <span class="required-star">*</span></label>
+          <input type="date" id="dob" class="form-input" required />
+        </div>
+
+        <!-- Gender -->
+        <div class="form-group">
+          <label>Gender <span class="required-star">*</span></label>
+          <div class="radio-group">
+            <label>
+              <input type="radio" name="gender" value="male" required /> Male
+            </label>
+            <label>
+              <input type="radio" name="gender" value="female" required /> Female
+            </label>
+          </div>
+        </div>
+
+        <!-- Phone Number -->
+        <div class="form-group">
+          <label for="phone">Phone Number <span class="required-star">*</span></label>
+          <input type="tel" id="phone" class="form-input" placeholder="+250 7XX XXX XXX" required />
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" class="form-input" placeholder="user@example.com" />
+        </div>
+
+        <!-- Service Needed -->
+        <div class="form-group">
+          <label for="service">Service Needed <span class="required-star">*</span></label>
+          <select id="service" class="form-input" required>
+            <option value="" disabled selected>— Select a service —</option>
+            <option value="Treatment">Treatment</option>
+            <option value="Laboratory">Laboratory</option>
+            <option value="Vaccination">Vaccination</option>
+          </select>
+        </div>
+
+        <!-- Preferred Date -->
+        <div class="form-group">
+          <label for="pref-date">Preferred Date <span class="required-star">*</span></label>
+          <input type="date" id="pref-date" class="form-input" required />
+        </div>
+
+        <!-- Preferred Time -->
+        <div class="form-group">
+          <label for="pref-time">Preferred Time <span class="required-star">*</span></label>
+          <select id="pref-time" class="form-input" required>
+            <option value="" disabled selected>— Select a time slot —</option>
+            <option value="08:00-09:00">08:00 AM – 09:00 AM</option>
+            <option value="09:00-10:00">09:00 AM – 10:00 AM</option>
+            <option value="10:00-11:00">10:00 AM – 11:00 AM</option>
+            <option value="11:00-12:00">11:00 AM – 12:00 PM</option>
+            <option value="14:00-15:00">02:00 PM – 03:00 PM</option>
+            <option value="15:00-16:00">03:00 PM – 04:00 PM</option>
+            <option value="16:00-17:00">04:00 PM – 05:00 PM</option>
+          </select>
+        </div>
+
+        <!-- Reason for Visit (full width) -->
+        <div class="form-group full-width">
+          <label for="reason">Reason for Visit / Message</label>
+          <textarea id="reason" class="form-input form-textarea"
+            placeholder="Briefly describe your symptoms or reason for the appointment…"></textarea>
+        </div>
+
+        <!-- Submit Button (full width) -->
+        <div class="form-submit-row full-width">
+          <button type="submit" class="btn-book-appointment pulse">
+            📅 Request Appointment
+          </button>
+        </div>
+      </form>
+
+      <!-- Confirmation Message (hidden by default) -->
+      <div class="booking-confirmation" id="bookingConfirmation">
+        <span class="confirm-icon">✅</span>
+        Your appointment request has been submitted!<br />
+        We'll contact you shortly to confirm the date and time.
+      </div>
+
+      <p class="booking-note">
+        For urgent medical needs, please call <strong>+250 788 396 826</strong> or visit us directly at M8XG+H9F,
+        Nyagatare.
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>Providing Quality Healthcare in Nyagatare</p>
+    <p>&copy; 2026 - KIRA CLINIC ONLINE</p>
+    <p>Your Health, Our Priority</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

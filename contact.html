@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kira Clinic Online – Contact</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body class="page-contact">
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo-box">
+        <img src="./img/logo.png" alt="Kira clinic Logo" />
+      </div>
+
+      <div class="header-right">
+        <h1 class="site-title">KIRA CLINIC ONLINE</h1>
+        <nav class="nav">
+          <a href="index.html" class="nav-link">HOME</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="services.html" class="nav-link nav-pill-outline">Book<br />Appointment</a>
+          <a href="contact.html" class="nav-link active-pill">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTACT SECTION -->
+  <section class="section-contact">
+    <h2 class="section-heading fade-in-up">Contact Us</h2>
+
+    <div class="contact-layout fade-in-up delay-1">
+      <!-- LEFT: Info + Map -->
+      <div class="contact-info">
+        <div class="contact-item hover-lift">
+          <span class="contact-icon">✉</span>
+          <span class="contact-text">info@kiraclinic.com</span>
+        </div>
+        <div class="contact-item hover-lift">
+          <span class="contact-icon">📞</span>
+          <span class="contact-text">+250 788 396 826</span>
+        </div>
+        <div class="contact-item hover-lift">
+          <span class="contact-icon"><img src="./img/map_location_pin_address_icon_231837.png" alt="Address Icon"
+              class="icon"></span>
+          <span class="contact-text">M8XG+H9F, Nyagatare</span>
+        </div>
+      </div>
+
+      <!-- RIGHT: Form -->
+      <div class="contact-form-wrap fade-in-up delay-2">
+        <div class="map-embed fade-in-up delay-2">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.6614024313385!2d30.32466148675064!3d-1.3012450206190727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dbf356844110cb%3A0x382954a68718967e!2sKIRA%20Clinic%20Ltd!5e0!3m2!1sen!2sus!4v1778220538762!5m2!1sen!2sus"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <h3 class="form-heading"><em>Get in touch</em></h3>
+        <form class="contact-form" id="contactForm">
+          <input type="text" class="form-input" placeholder="Fullname ..." required />
+          <input type="email" class="form-input" placeholder="user@company.domain" required />
+          <textarea class="form-input form-textarea" placeholder="Message......." required></textarea>
+          <div class="form-btn-row">
+            <button type="submit" class="btn-send pulse">Send Message</button>
+          </div>
+        </form>
+        <div class="form-success" id="formSuccess">
+          ✅ Message sent! We'll get back to you shortly.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>Providing Quality Healthcare in Nyagatare</p>
+    <p>&copy; 2026 - KIRA CLINIC ONLINE</p>
+    <p>Your Health, Our Priority</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

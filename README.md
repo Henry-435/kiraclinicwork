@@ -12,7 +12,10 @@ School project – [Website Development / 2026]
 
 ## 📦 What’s inside
 
-- `index.html` – main structure of the clinic website  
+- `index.html` – main structure of the clinic website
+- `contact.html` - our clinic contact, address and get in touch form
+- `services.html ` - the services we provide
+- `book-appointment.html` - Book your appointment here now  
 - `style.css` – modern, responsive styling  
 - `script.js` – interactive features (appointment alerts, form validation, etc.)
 
@@ -25,6 +28,7 @@ Copy the repository URL and run the following commands:
 ```bash
 git clone https://github.com/Henry-435/kiraclinicwork.git
 cd kira-clinic
+```
 
 ## ✅ Fluency & Ease of Use 
 

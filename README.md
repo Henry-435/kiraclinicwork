@@ -3,6 +3,10 @@
 A front-end clinic website built with **HTML, CSS, and JavaScript**.  
 Designed to demonstrate a clean, responsive, and user-friendly interface for a fictional medical clinic.
 
+# Preview the output here
+```
+https://github-html-preview.dohyeon5626.com/?https://github.com/Henry-435/kiraclinicwork/blob/main/index.html
+```
 ## 👤 Author
 
 **IRINGIRE Henry Gallery** – [heniringire@gmail.com](mailto:heniringire@gmail.com)  
